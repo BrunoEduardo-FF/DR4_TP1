@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/registradorFragment">
+
+    <fragment
+        android:id="@+id/registradorFragment"
+        android:name="br.edu.infnet.dr4_tp1.ui.registrador.RegistradorFragment"
+        android:label="registrador_fragment"
+        tools:layout="@layout/registrador_fragment" >
+        <action
+            android:id="@+id/action_registradorFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="br.edu.infnet.dr4_tp1.ui.list.ListFragment"
+        android:label="list_fragment"
+        tools:layout="@layout/list_fragment" />
+</navigation>
